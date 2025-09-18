@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { stylesSingIn } from './styles'
 
 export function SignIn() {
   return (
@@ -10,11 +11,3 @@ export function SignIn() {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#29375aff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
