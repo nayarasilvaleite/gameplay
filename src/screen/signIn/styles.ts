@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 
 
-const stylesSingIn = StyleSheet.create({
+const stylesSignIn = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: 'red',
