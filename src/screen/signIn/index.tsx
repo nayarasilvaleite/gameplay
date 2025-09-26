@@ -1,15 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, TextInput } from 'react-native';
 import { stylesSignIn } from './styles';
-import { TextInput } from 'react-native';
+import { useState } from 'react';
 
-export function stylesSignIn() {
+export function SignIn() {
+  const [text,setText] = useState("");
   return (
     <View style={stylesSignIn.container}>
-      <Text> ssa tela é a tela de entrada </Text>
-      <TextInput style={{width:200, height:50,borderWidth:2}}/>
+      <Text> essa tela é a tela de entrada </Text>
+      <TextInput style={stylesSignIn.textInput} onChangeText={setText}/>
       <StatusBar style="auto" />
+      <Text>Voce digitou: {text}</Text>
     </View>
   );
 }
-
